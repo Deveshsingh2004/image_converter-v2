@@ -58,8 +58,7 @@ This is a web application built using **Next.js** that allows users to upload im
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Deveshsingh2004/image_converter-v2
    ```
 
 2. Install dependencies:
@@ -75,6 +74,7 @@ This is a web application built using **Next.js** that allows users to upload im
    AWS_SECRET_ACCESS_KEY=your-secret-access-key
    S3_BUCKET_NAME=your-s3-bucket-name
    AWS_REGION=your-aws-region
+   AWS_API_GATEWAY_URL=your-api-gateway-url
    ```
 
 4. Run the development server:
