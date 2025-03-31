@@ -31,7 +31,6 @@ const Home = () => {
       const link = document.createElement("a");
       link.href = blobUrl;
       // console.log("selected file:", selectedFile);
-      // console.log("selected file:", selectedFile.name);
       link.download = selectedFile.name.replace(/\.[^/.]+$/, `.${format}`);
       document.body.appendChild(link);
       link.click();
@@ -72,7 +71,7 @@ const Home = () => {
       if (uploadResponse.ok) {
         console.log("File uploaded successfully");
 
-        // 3. Trigger image processing by notifying your server
+        // 3. Trigger image processing by notifying your Lambda
         const processingResponse = await fetch(
           `/api/downlode-image?key=uploads/${fileName}`
         );

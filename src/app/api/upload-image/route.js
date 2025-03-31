@@ -24,7 +24,7 @@ export async function GET(req) {
   const command = new PutObjectCommand(params);
   const url = await getSignedUrl(s3, command, { expiresIn: 3600 });
 
-  // console.log(url);
+  console.log("This is from the uplode-image#########################");
 
   return NextResponse.json(
     { Message: "Succesfully fetched the presigned url", url },
